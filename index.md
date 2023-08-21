@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Student Blog
+title: Advik Blog
 ---
 
 
 ## Build you Home Page here 
-This is about your journey. Start now!!!
+Hey guys, I'm Advik. I'm taking CSP because I love to code code code.
 
 ## Overview of Hacks, Study and Tangibles
 Blogging in GitHub pages is a way to learn and code at the same time. 
