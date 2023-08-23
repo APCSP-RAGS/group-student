@@ -17,4 +17,4 @@ I drew a picture that describes a lot of my interests, check it out below: \
 ## Some of My Personal Recommendations
 One of my favorite albums(and album covers): \
 Wish You Were Here - Pink Floyd \
-<a href="https://www.youtube.com/watch?v=DG_gVtyLJ5A" target="_blank"><img src="wishyouwerehere.jpg" width="300"></a>
+<a href="https://www.youtube.com/watch?v=Y9LU0utKCSw&list=OLAK5uy_mzowhqljIOba8BVGEmVkeaWeL2S_bO4bw" target="_blank"><img src="wishyouwerehere.jpg" width="300"></a>
