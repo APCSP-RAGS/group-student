@@ -8,7 +8,11 @@ title: Advik Blog
 Hey guys, I'm Advik(the goat). I'm taking CSP because I love to code code code. \
 Here's a picture of me: \
 <img src="https://ca.slack-edge.com/TUDAF53UJ-U05N5ABTVNX-5a71a432305f-512" width="300"> \
-I love music, computer science, and video games.
+I love music, computer science, and video games. \
+I drew a picture that describes a lot of my interests, check it out below: \
+<img src="about_me_picture.png" width="250">
+
+
 
 ## Overview of Hacks, Study and Tangibles
 Blogging in GitHub pages is a way to learn and code at the same time. 
