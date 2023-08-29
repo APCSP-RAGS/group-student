@@ -3,18 +3,14 @@ description: "August 2023 to June 2024"
 owner_name: Advik Garg
 github_username: advikg
 baseurl: ""
-remote_theme: pages-themes/midnight@v0.2.0
+# remote_theme: pages-themes/midnight@v0.2.0
 # remote_theme: pages-themes/dinky@v0.2.0
-# remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: pages-themes/minimal@v0.2.0
 # remote_theme: pages-themes/hacker@v0.2.0
 # remote_theme: pages-themes/cayman@v0.2.0
 # remote_theme: pages-themes/time-machine@v0.2.0
 # remote_theme: pages-themes/architect@v0.2.0
+
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
   - jekyll-remote-theme
 future: true
