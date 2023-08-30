@@ -4,11 +4,10 @@ title: Advik Blog
 ---
 
 
-<html><body>
+<html>
 
 <style>
-
-  body {
+body {
       background-color: #171515;
       color: #ffffff;
   }
@@ -37,7 +36,7 @@ h2::before {
 h2 {
   position: relative;
   color: #39FF14;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: Monospace;
 }
 
@@ -75,13 +74,10 @@ body {
 </style>
 
 
-
-<main>
+<body>
 
 <h2>About Me</h2>
-<p>Hey guys, I'm Advik(the goat). I'm taking CSP because I love to code code code. <br>
-Here's a picture of me: <br></p>
-<img src="images/pfp.jpg" width="300"> <br>
+<p>Hey guys, I'm Advik(the goat). I'm taking CSP because I love to code code code. <br>aaa
 <p>I love music, computer science, and video games. <br>
 I drew a picture that describes a lot of my interests, check it out below: <br></p>
 <img src="images/about_me_picture.png" width="250">
@@ -91,7 +87,4 @@ I drew a picture that describes a lot of my interests, check it out below: <br><
 Wish You Were Here - Pink Floyd <br></p>
 <a href="https://www.youtube.com/watch?v=Y9LU0utKCSw&list=OLAK5uy_mzowhqljIOba8BVGEmVkeaWeL2S_bO4bw" target="_blank"><img src="wishyouwerehere.jpg" width="300"></a>
 
-
-</main>
-
-</body></html>
+</body>
