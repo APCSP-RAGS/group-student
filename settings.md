@@ -49,7 +49,7 @@ html {
   inline-size: 100%;
 }
 
-body {
+/* body {
   min-block-size: 100%;
   min-inline-size: 100%;
   margin: 0;
@@ -57,7 +57,7 @@ body {
   display: grid;
   place-content: center;
   font-family: system-ui, sans-serif;
-}
+} */
 
 .block-container {
     padding-top: 1rem;
@@ -70,19 +70,24 @@ body {
   body {
     grid-auto-flow: column;
   }
+.lightmode {
+    background-color: #FAF9F6;
+    color: black;
 }
 </style>
 
 
 <body>
 
-<h2>About Me</h2>
-<p>Hey guys, I'm Advik(the goat). I'm taking CSP because I love to code code code. <br>aaa
-<p>I love music, computer science, and video games. <br>
-I drew a picture that describes a lot of my interests, check it out below: <br></p>
-<img src="images/about_me_picture.png" width="250">
+<h1>Settings:</h1>
+<p>Color Theme:</p>
+<button onclick="colorMode()">Toggle Light/Dark Mode</button>
 
-<h2>Some of My Personal Recommendations</h2>
-<p>One of my favorite albums(and album covers): <br>
-Wish You Were Here - Pink Floyd <br></p>
-<a href="https://www.youtube.com/watch?v=Y9LU0utKCSw&list=OLAK5uy_mzowhqljIOba8BVGEmVkeaWeL2S_bO4bw" target="_blank"><img src="wishyouwerehere.jpg" width="300"></a>
+
+<script>
+function colorMode() {
+   var element = document.body;
+   element.classList.toggle("light-mode");
+   document.getElementById("h2").style.color = "blue";
+}
+</script>

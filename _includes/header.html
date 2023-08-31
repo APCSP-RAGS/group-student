@@ -52,8 +52,63 @@ h1 {
   text-align: center;
   padding: 0.2rem;
 }
+.lightmode {
+    background-color: #FAF9F6;
+    color: black;
+}
 
 </style>
+<style> 
+  body { background-color: #171515; color: white; } 
+  p{font-family: sans-serif;}
+  hr{background-color: white}
+  .color{color: white;}
+  body {
+    padding: 25px;
+    background-color: #171515;
+    color: #7289da;
+    font-size: 16px;
+    transition-duration: 0.2s;
+  }
+  hr{background-color: #7289da;}
+  .dark-mode {
+    background-color: white;
+    color: #171515;
+    transition-duration: 0.2s;
+  }
+  .bar-dark{background-color: #171515}
+  .table-dark{color: #171515}
+  
+  .border-dark {
+    border: 1px solid black;
+  }
+  .cells-dark {
+    width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+  }
+  .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 2px;
+    }
+    .cell {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+</style>
+
+
 
 <img src="{{site.baseurl}}/images/pfp.jpg" class="pfp">
 
@@ -64,7 +119,34 @@ h1 {
       <a href="{{site.baseurl}}/"><h1 style="font-size: 30px;">./home</h1></a> <br>
       <a href="{{site.baseurl}}/compsci"><h1 style="font-size: 30px;">./compsci</h1></a><br>
       <a href="{{site.baseurl}}/blogs"><h1 style="font-size: 30px;">./blogs</h1></a><br>
-      <a href="{{ site.github.repository_url }}#readme"><h1 style="font-size: 30px;">View On GitHub</h1></a></button> <br>
+      <a href="{{site.baseurl}}/settings"><h1 style="font-size: 30px;">./settings</h1></a><br>
+      <a href="{{ site.github.repository_url }}#readme"><h1 style="font-size: 30px;">View On GitHub</h1></a> <br>
+      <button onclick="colorMode()">Toggle Light/Dark Mode</button>
     </nav>
   </div><!-- end header -->
 </header>
+
+<script>
+  function colorMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    var elem = document.querySelectorAll("#border");
+    elem.forEach(function(border) {
+      border.classList.toggle("border-dark");
+      });
+    var bars = document.querySelectorAll("#bar");
+    bars.forEach(function(bar) {
+      bar.classList.toggle("bar-dark");
+      });
+    var cellz = document.querySelectorAll("#cells");
+    cellz.forEach(function(cells) {
+      cells.classList.toggle("cell");
+      cells.classList.toggle("cells-dark");
+      });
+    var tables = document.querySelectorAll("#table");
+    tables.forEach(function(table) {
+      // table.classList.toggle("myTable")
+      table.classList.toggle("table-dark");
+      });
+  }
+  </script>
