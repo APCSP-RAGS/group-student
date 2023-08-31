@@ -41,6 +41,7 @@ h1::before {
   inset: 0 0 0 0;
   background: rgb(0, 0, 0);
   z-index: -1;
+
   transition: transform .3s ease;
 }
 
@@ -49,7 +50,9 @@ h1 {
   color: #39FF14;
   font-family: Monospace;
   text-align: center;
+  padding: 0.2rem;
 }
+
 </style>
 
 <img src="{{site.baseurl}}/images/pfp.jpg" class="pfp">
@@ -58,10 +61,9 @@ h1 {
 <header class="site-header">
   <div id="header">
     <nav>
-      <!-- <class="fork" ><button class="headerbutton" onclick="window.location.href='{{site.baseurl}}/'";></button>--><a href="{{site.baseurl}}/"><h1 style="font-size: 30px;">./home</h1></a> <br>
-      <!-- <class="fork"><button class="headerbutton"onclick="window.location.href='{{site.baseurl}}/csp'";><a href="{{site.baseurl}}/csp">CSP</a></button> <br>  --><a href="{{site.baseurl}}/compsci"><h1 style="font-size: 30px;">./compsci</h1></a><br>
-      <!-- <class="fork"><button class="headerbutton"onclick="window.location.href='{{site.baseurl}}/blogs'";><a href="{{site.baseurl}}/blogs">Blogs</a></button> <br> --><a href="{{site.baseurl}}/blogs"><h1 style="font-size: 30px;">./blogs</h1></a><br>
-      <!-- <class="fork"><button class="headerbutton"onclick="window.location.href='{{site.baseurl}}/games/'";><a href="{{site.baseurl}}/games">Games</a></button> <br> --><a href="{{site.baseurl}}/games"><h1 style="font-size: 30px;">./games</h1></a><br>
+      <a href="{{site.baseurl}}/"><h1 style="font-size: 30px;">./home</h1></a> <br>
+      <a href="{{site.baseurl}}/compsci"><h1 style="font-size: 30px;">./compsci</h1></a><br>
+      <a href="{{site.baseurl}}/blogs"><h1 style="font-size: 30px;">./blogs</h1></a><br>
       <a href="{{ site.github.repository_url }}#readme"><h1 style="font-size: 30px;">View On GitHub</h1></a></button> <br>
     </nav>
   </div><!-- end header -->
