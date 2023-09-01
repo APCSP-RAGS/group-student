@@ -12,7 +12,7 @@
 
 
   img{
-    position:relative;
+    position: relative;
     border: 3px solid;
     border-color: #39FF14;
   }
@@ -53,16 +53,16 @@ h1 {
   padding: 0.2rem;
 }
 .lightmode {
-    background-color: #FAF9F6;
+    background-color: #F2EBE2;
     color: black;
 }
 
 </style>
 <style> 
-  body { background-color: #171515; color: white; } 
+  body { background-color: #171515; color: #F2EBE2; } 
   p{font-family: sans-serif;}
-  hr{background-color: white}
-  .color{color: white;}
+  hr{background-color: #F2EBE2}
+  .color{color: #F2EBE2;}
   body {
     padding: 25px;
     background-color: #171515;
@@ -72,7 +72,7 @@ h1 {
   }
   hr{background-color: #7289da;}
   .dark-mode {
-    background-color: white;
+    background-color: #F2EBE2;
     color: #171515;
     transition-duration: 0.2s;
   }
@@ -106,6 +106,15 @@ h1 {
       font-size: 24px;
       cursor: pointer;
     }
+    .header-dark {
+      color: #7289da;
+    }
+    .image-dark {
+      border-color: #7289da;
+    }
+    .header-dark::before {
+    background: #C4A484;
+    }
 </style>
 
 
@@ -127,6 +136,12 @@ h1 {
 
 <script>
   function colorMode() {
+    var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+    headers.forEach(function(header) {
+      header.classList.toggle("header-dark");
+    });
+    var image = document.querySelector("img");
+    image.classList.toggle("image-dark");
     var element = document.body;
     element.classList.toggle("dark-mode");
     var elem = document.querySelectorAll("#border");
