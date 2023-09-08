@@ -121,7 +121,6 @@ h1 {
 
 <img src="{{site.baseurl}}/images/pfp.jpg" class="pfp">
 
-
 <header class="site-header">
   <div id="header">
     <nav>
@@ -129,38 +128,92 @@ h1 {
       <a href="{{site.baseurl}}/compsci"><h1 style="font-size: 30px;">./compsci</h1></a><br>
       <a href="{{site.baseurl}}/blogs"><h1 style="font-size: 30px;">./blogs</h1></a><br>
       <a href="{{ site.github.repository_url }}#readme"><h1 style="font-size: 30px;">View On GitHub</h1></a> <br>
-      <button onclick="colorMode()">Toggle Light/Dark Mode</button>
+      <button onclick="toggleMode()">Toggle Light/Dark Mode</button>
     </nav>
   </div><!-- end header -->
 </header>
 
 <script>
-  function colorMode() {
+  var preferDark = window.localStorage.getItem('preferDark');
+
+  if (preferDark !== 'true' && preferDark !== 'false') {
+    window.localStorage.setItem('preferDark', 'true');
+    preferDark = window.localStorage.getItem('preferDark');
+  }
+
+  if (preferDark == 'true') {
+    darkMode();
+  } else {
+    lightMode();
+  }
+
+  function toggleMode() {
+      if (preferDark === 'true') {
+        lightMode();
+        preferDark = 'false';
+      } else {
+        darkMode();
+        preferDark = 'true';
+      }
+      window.localStorage.setItem('preferDark', preferDark);
+    }
+
+  function darkMode() {
     var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
     headers.forEach(function(header) {
-      header.classList.toggle("header-dark");
+      header.classList.add("header-dark");
     });
     var image = document.querySelector("img");
-    image.classList.toggle("image-dark");
+    image.classList.add("image-dark");
     var element = document.body;
-    element.classList.toggle("dark-mode");
+    element.classList.add("dark-mode");
     var elem = document.querySelectorAll("#border");
     elem.forEach(function(border) {
-      border.classList.toggle("border-dark");
+      border.classList.add("border-dark");
       });
     var bars = document.querySelectorAll("#bar");
     bars.forEach(function(bar) {
-      bar.classList.toggle("bar-dark");
+      bar.classList.add("bar-dark");
       });
     var cellz = document.querySelectorAll("#cells");
     cellz.forEach(function(cells) {
-      cells.classList.toggle("cell");
-      cells.classList.toggle("cells-dark");
+      cells.classList.add("cell");
+      cells.classList.add("cells-dark");
       });
     var tables = document.querySelectorAll("#table");
     tables.forEach(function(table) {
-      // table.classList.toggle("myTable")
-      table.classList.toggle("table-dark");
+      // table.classList.add("myTable")
+      table.classList.add("table-dark");
       });
+      document.body.classList.add('dark-mode');
+  }
+  function lightMode() {
+    var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+    headers.forEach(function(header) {
+      header.classList.remove("header-dark");
+    });
+    var image = document.querySelector("img");
+    image.classList.remove("image-dark");
+    var element = document.body;
+    element.classList.remove("dark-mode");
+    var elem = document.querySelectorAll("#border");
+    elem.forEach(function(border) {
+      border.classList.remove("border-dark");
+      });
+    var bars = document.querySelectorAll("#bar");
+    bars.forEach(function(bar) {
+      bar.classList.remove("bar-dark");
+      });
+    var cellz = document.querySelectorAll("#cells");
+    cellz.forEach(function(cells) {
+      cells.classList.remove("cell");
+      cells.classList.remove("cells-dark");
+      });
+    var tables = document.querySelectorAll("#table");
+    tables.forEach(function(table) {
+      // table.classList.remove("myTable")
+      table.classList.remove("table-dark");
+      });
+      document.body.classList.remove('dark-mode');
   }
   </script>
