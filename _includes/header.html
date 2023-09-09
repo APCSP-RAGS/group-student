@@ -10,13 +10,6 @@
     margin-top: 115%;
   }
 
-
-  img{
-    position: relative;
-    border: 3px solid;
-    border-color: #39FF14;
-  }
-
   .pfp {
     border-radius: 50%;
     position: absolute;
@@ -59,6 +52,11 @@ h1 {
 
 </style>
 <style> 
+  img {
+    position: relative;
+    border: 3px solid;
+    border-color: #39FF14;
+  }
   body { background-color: #171515; color: #F2EBE2; } 
   p{font-family: sans-serif;}
   hr{background-color: #F2EBE2}
@@ -113,7 +111,11 @@ h1 {
       border-color: #7289da;
     }
     .header-dark::before {
-    background: #C4A484;
+    background: #ffff;
+    }
+    button {
+      background-color: transparent;
+      border: 0px;
     }
 </style>
 
@@ -128,10 +130,14 @@ h1 {
       <a href="{{site.baseurl}}/compsci"><h1 style="font-size: 30px;">./compsci</h1></a><br>
       <a href="{{site.baseurl}}/blogs"><h1 style="font-size: 30px;">./blogs</h1></a><br>
       <a href="{{ site.github.repository_url }}#readme"><h1 style="font-size: 30px;">View On GitHub</h1></a> <br>
-      <button onclick="toggleMode()">Toggle Light/Dark Mode</button>
+      <button onclick="toggleMode()"><h1 style="font-size: 30px;">Light/Dark Mode</h1></button>
     </nav>
   </div><!-- end header -->
 </header>
+
+
+
+
 
 <script>
   var preferDark = window.localStorage.getItem('preferDark');
@@ -139,12 +145,6 @@ h1 {
   if (preferDark !== 'true' && preferDark !== 'false') {
     window.localStorage.setItem('preferDark', 'false');
     preferDark = window.localStorage.getItem('preferDark');
-  }
-
-  if (preferDark == 'true') {
-    darkMode();
-  } else {
-    lightMode();
   }
 
   function toggleMode() {
@@ -163,8 +163,10 @@ h1 {
     headers.forEach(function(header) {
       header.classList.add("header-dark");
     });
-    var image = document.querySelector("img");
-    image.classList.add("image-dark");
+    var images = document.querySelectorAll("img");
+    images.forEach(function(image) {
+      image.classList.add("image-dark");
+    });
     var element = document.body;
     element.classList.add("dark-mode");
     var elem = document.querySelectorAll("#border");
@@ -192,8 +194,10 @@ h1 {
     headers.forEach(function(header) {
       header.classList.remove("header-dark");
     });
-    var image = document.querySelector("img");
-    image.classList.remove("image-dark");
+    var images = document.querySelectorAll("img");
+    images.forEach(function(image) {
+      image.classList.remove("image-dark");
+    });
     var element = document.body;
     element.classList.remove("dark-mode");
     var elem = document.querySelectorAll("#border");
@@ -216,4 +220,11 @@ h1 {
       });
       document.body.classList.remove('dark-mode');
   }
+  document.addEventListener("DOMContentLoaded", function() {
+    if (preferDark == 'true') {
+    darkMode();
+  } else {
+    lightMode();
+  }
+  });
   </script>
