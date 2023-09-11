@@ -64,7 +64,7 @@ courses: { compsci: {week: 3} }
     const board = document.getElementById("board");
     const restartButton = document.getElementById("restart");
     const size = 10; // Adjust the size of the board as needed
-    const bombCount = 20; // Adjust the number of bombs as needed
+    const bombCount = 15; // Adjust the number of bombs as needed
     let cells = [];
     let bombs = [];
 
