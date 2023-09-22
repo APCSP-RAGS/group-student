@@ -39,8 +39,11 @@ h3 {
 </style>
 
 ## Agile Methodology
-- Create an Agile Manifesto(doc)
-- Create a diagram incorporating our Manifesto's ideas
+- Create an Agile Manifesto(doc) - Aashray
+- Create a diagram incorporating our Manifesto's ideas - Aashray
 
 ## 1.1-1.4 Team Text
-- 
+- Program Function & Purpose - Akhil
+- Program Design & Development - Srijan
+- Identifying and Correcting Errors - Advik
+- Video Creation - Advik
