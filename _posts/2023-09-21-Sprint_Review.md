@@ -1,13 +1,13 @@
 ---
 toc: true
 comments: true
-layout: default
-title: Week 5 Sprint Ticket
+layout: post
+title: Sprint Review
 type: tangibles
 courses: { compsci: {week: 5} }
 ---
 ​
-## What we learned
+# What we learned
 ​
 - Agile Methodology
   - A way for teams to collaborate on a project together
