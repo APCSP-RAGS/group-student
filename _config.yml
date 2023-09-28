@@ -1,9 +1,9 @@
 title: CompSci Blogs
 description: "August 2023 to June 2024"
-owner_name: Advik Garg
-github_username: advikg
-baseurl: "/student"
-repository: advikg/student.git
+owner_name: APCSP-RAGS
+github_username: APCSP-RAGS
+baseurl: "/group-student"
+repository: APCSP-RAGS/group-student.git
 # remote_theme: pages-themes/midnight@v0.2.0
 # remote_theme: pages-themes/dinky@v0.2.0
 remote_theme: pages-themes/minimal@v0.2.0
