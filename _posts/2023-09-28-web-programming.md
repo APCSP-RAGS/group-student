@@ -1,11 +1,12 @@
 ---
 toc: true
 comments: true
-layout: default
+layout: post
 title: Web Development Review Ticket
-type: tangibles
-courses: { timebox: {week: 6} }
+type: plans
+courses: { compsci: {week: 6} }
 ---
+
 
 ## Hacks Accomplished
   - HTML Basics
