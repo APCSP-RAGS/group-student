@@ -3,7 +3,7 @@ toc: true
 comments: true
 layout: post
 title: Web Development Review Ticket
-type: plans
+type: tangibles
 courses: { compsci: {week: 6} }
 ---
 
