@@ -77,12 +77,13 @@ body {
 <body>
 
 <h2>About Me</h2>
-<p>Hey guys, I'm Advik(the goat). I'm taking CSP because I love to code code code. <br>
-I love music, computer science, and video games. <br>
-I drew a picture that describes a lot of my interests, check it out below: <br></p>
-<img src="images/about_me_picture.png" width="250">
+<p>We the RAGS Group are a group of coders that want to learn things such as the coding development process, how to debug, and learn different languages such as javascript and html. So far, we have learned: </p>
+- Debugging JS Code
+- Having HTML interact with JS code
+- Learning JS Data Types
+- Learning HTML formatting for front-end dev
 
 <h2>Special Shoutout</h2>
-<p>One of my favorite albums(and album covers): <br>
+<p>One of our favorite albums(and album covers): <br>
 Wish You Were Here - Pink Floyd <br></p>
 <a href="https://www.youtube.com/watch?v=Y9LU0utKCSw&list=OLAK5uy_mzowhqljIOba8BVGEmVkeaWeL2S_bO4bw" target="_blank"><img src="wishyouwerehere.jpg" width="300"></a>
