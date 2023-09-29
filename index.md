@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Advik Blog
+title: RAGS Group Blog
 ---
 
 
