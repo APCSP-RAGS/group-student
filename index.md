@@ -78,10 +78,12 @@ body {
 
 <h2>About Me</h2>
 <p>We the RAGS Group are a group of coders that want to learn things such as the coding development process, how to debug, and learn different languages such as javascript and html. So far, we have learned: </p><br>
-- Debugging JS Code
-- Having HTML interact with JS code
-- Learning JS Data Types
-- Learning HTML formatting for front-end dev
+<ul>
+<li>Debugging JS Code</li>
+<li>Having HTML interact with JS code</li>
+<li>Learning JS Data Types</li>
+<li>Learning HTML formatting for front-end dev</li>
+</ul>
 <br>
 <h2>Special Shoutout</h2>
 <p>One of our favorite albums(and album covers): <br>
